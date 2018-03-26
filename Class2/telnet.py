@@ -27,13 +27,13 @@ def connect(ip_addr, TELNET_PORT, TELNET_TIMEOUT):
         sys.exit(1)
 
 
-def login(conn, user, pass):
+def login(conn, user, passw):
     conn.read_until("sername:", TELNET_TIMEOUT)
     sleep(1)
-    comm.write(USER + "\n")
+    comm.write(user + "\n")
     conn.read_until("assword:", TELNET_TIMEOUT)
     sleep(1)
-    conn.write(PASS + "\n")
+    conn.write(passw + "\n")
     output = conn.read_until("pynet-rtr#", TELNET_TIMEOUT)
     print(output)
 
