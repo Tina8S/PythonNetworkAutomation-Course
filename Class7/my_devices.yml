@@ -1,0 +1,37 @@
+pynet-rtr1:
+  hostname: 184.105.247.70
+  device_type: ios
+  username: pyclass
+  password: 88newclass
+  optional_args: 
+pynet-rtr2:
+  hostname: 184.105.247.71
+  device_type: ios
+  username: pyclass
+  password: 88newclass
+  optional_args: 
+pynet-sw1:
+  hostname: 184.105.247.72
+  device_type: eos
+  username: pyclass
+  password: 88newclass
+  optional_args: 
+pynet-sw2:
+  hostname: 184.105.247.73
+  device_type: eos
+  username: pyclass
+  password: 88newclass
+  optional_args: 
+juniper-srx:
+  hostname: 184.105.247.76
+  device_type: junos
+  username: pyclass
+  password: 88newclass
+  optional_args: 
+nxos1:
+  hostname: nxos1.twb-tech.com
+  device_type: nxos
+  username: pyclass
+  password: 88newclass
+  optional_args: 
+    port: 8443
